@@ -34,8 +34,6 @@ body
 		background-position: 96% center
 
 
-
-
 b, strong
 	font-weight: bold
 
@@ -91,6 +89,21 @@ button
 		&.active
 			background-color: white
 			border-color: $accent
+			color: $accent
+
+	&--white
+		background-color: white
+		color: $accent
+		border: 1px solid white
+		@include transition(.2s)
+		cursor: pointer
+		&:hover
+			background-color: darken(white, 8%)
+			border-color: white
+			color: $accent
+		&.active
+			background-color: white
+			border-color: white
 			color: $accent
 
 	&--normal
