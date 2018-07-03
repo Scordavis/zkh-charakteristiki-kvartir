@@ -4745,6 +4745,7 @@ body {
   font-size: 16px;
   min-width: 992px;
   position: relative;
+  background-color: #eeeee0;
   line-height: 1.65;
   font-family: "ubuntu", sans-serif;
   overflow-x: hidden;
@@ -4895,7 +4896,7 @@ button {
   border: 1px solid #606060;
   border-top: none; }
   .apartment__row--gray {
-    background-color: #606060;
+    background-color: #868686;
     color: white; }
     .apartment__row--gray td:first-child {
       border-right: 1px solid white; }
@@ -4910,36 +4911,70 @@ button {
     border-right: 1px solid #606060; }
 
 .apartment__img-wrapper {
+  width: 100%;
   height: 300px;
   -webkit-background-size: cover;
           background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat; }
 
-.apartment__img-btn {
+.apartment__file-input {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+.apartment__file-wrapper {
+  position: absolute;
   width: 100%;
   height: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  cursor: pointer;
   background-color: rgba(0, 0, 0, 0.05);
+  z-index: 2;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s; }
-  .apartment__img-btn:hover {
+  .apartment__file-wrapper:hover {
     background-color: rgba(0, 0, 0, 0.15); }
 
-.apartment__img-text {
+.apartment__file-label {
   position: absolute;
   width: 100%;
+  height: 60px;
   right: 0;
   left: 0;
-  bottom: 50px;
-  color: #606060;
+  bottom: 20px;
+  color: #868686;
+  text-align: center;
   font-size: 14px;
-  z-index: 2; }
+  font-weight: bold; }
+
+.apartment__data {
+  background-color: white;
+  padding: 25px 29px;
+  font-size: 18px; }
+  .apartment__data-heading {
+    font-weight: bold; }
+  .apartment__data-text {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 4px; }
+
+.apartment__modal-btn {
+  background-color: transparent;
+  padding: 14px;
+  color: #0051a3;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid #0051a3; }
 
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {

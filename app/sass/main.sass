@@ -13,6 +13,7 @@ body
 	font-size: 16px
 	min-width: 992px
 	position: relative
+	background-color: #eeeee0
 	line-height: 1.65
 	font-family: $default-font
 	overflow-x: hidden
@@ -64,6 +65,8 @@ button
 
 // @include transition(.2s)
 
+
+// Serega, zameni stili dlja knopok v osnovnom faile na eti
 .button
 	&--red
 		background-color: $danger
@@ -173,6 +176,14 @@ button
 		// 		transform: scale(1.5)
 		// 		opacity: 0
 
+
+
+// Serega, otsuda nachinautsja stili dlja etoj stranicy
+// background dlja stranicy poka propisan v body
+// Zameni kusok koda s knopkami v osnovnom faile na tot, kotoriy zdes
+
+
+
 // .apartment
 .apartment
 	&__wrapper
@@ -189,7 +200,7 @@ button
 		border: 1px solid $text
 		border-top: none
 		&--gray
-			background-color: $text
+			background-color: lighten($text, 15%)
 			color: white
 			td
 				&:first-child
@@ -206,34 +217,70 @@ button
 	&__info
 	&__img
 		&-wrapper
+			width: 100%
 			height: 300px
 			background-size: cover
 			background-position: 50% 50%
 			background-repeat: no-repeat
 
-		&-btn
-			position: absolute
-			top: 0
-			right: 0
-			bottom: 0
-			left: 0
-			width: 100%
-			height: 100%
-			background-color: fade-out(black, .95)
-			@include transition(.2s);
-			&:hover
-				background-color: fade-out(black, .85)
+
+	&__file-input
+		position: absolute
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0,0,0,0);
+		border: 0;
+
+
+	&__file-wrapper
+		position: absolute
+		width: 100%
+		height: 100%
+		right: 0
+		left: 0
+		bottom: 0
+		margin-bottom: 0
+		cursor: pointer
+		background-color: fade-out(black, .95)
+		z-index: 2
+		@include transition(.2s);
+		&:hover
+			background-color: fade-out(black, .85)
+
+	&__file-label
+		position: absolute
+		width: 100%
+		height: 60px
+		right: 0
+		left: 0
+		bottom: 20px
+		color: lighten($text, 15%)
+		text-align: center
+		font-size: 14px
+		font-weight: bold
+
+	&__data
+		background-color: white
+		padding: 25px 29px
+		font-size: 18px
+		&-heading
+			font-weight: bold
 
 		&-text
-			position: absolute
-			width: 100%
-			right: 0
-			left: 0
-			bottom: 50px
-			color: $text
-			font-size: 14px
-			z-index: 2
+			font-size: 16px
+			font-weight: normal
+			margin-bottom: 4px
 
+	&__modal-btn
+		background-color: transparent
+		padding: 14px
+		color: $accent
+		font-size: 16px
+		font-weight: bold
+		border: 1px solid $accent
 
 
 

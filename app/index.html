@@ -104,14 +104,34 @@
 				</div>
 				<!-- .apartment__info -->
 				<div class="col-6 apartment__info">
-					<form action="" enctype="multipart/form-data">
-						<div class="row">
-							<div class="col-12 apartment__img-wrapper" style="background-image: url(img/placeholder.jpg);">
-								<input type="file" id="file" name="file" placeholder="121212">
-								<button class="text-center btn apartment__img-btn" style="display: block;"><span class="apartment__img-text">натисніть, щоб додати фото</span></button>
+					<div class="row no-gutters">
+						<!-- apartment__img -->
+						<div class="col-12 apartment__img-wrapper" style="background-image: url(img/placeholder.jpg);">
+							<!-- Serega, posle zagruzki kartinki prjach formu cherez inlainovyj stil'  -->
+							<form action="" enctype="multipart/form-data" class="apartment__form" style="display: block;">
+								<label for="apartment-upload" class="apartment__file-wrapper"><span class="apartment__file-label">натисніть, щоб додати фото</span></label>
+								<input id="apartment-upload" class="apartment__file-input" type="file"/>
+							</form>
+						</div>
+						<!-- apartment__info -->
+						<div class="col-12 mt-4">
+							<!-- wrapper for bootstrap padding unblock -->
+							<div class="apartment__data">
+								<p class="apartment__data-heading">Квартири/нежитлові приміщення:</p>
+								<p class="apartment__data-text">Загальна кількість квартир: <span data-apartament-info="">1</span></p>
+								<p class="apartment__data-text">в т.ч.: 1 кімн. - <span data-apartament-info="">0</span></p>
+								<p class="apartment__data-text">2 кімн. - <span data-apartament-info="">1</span></p>
+								<p class="apartment__data-text">3 кімн. - <span data-apartament-info="">0</span></p>
+								<p class="apartment__data-text">5 і більше - <span data-apartament-info="">0</span></p>
 							</div>
 						</div>
-					</form>
+						<!-- apartment__modal-btn -->
+						<div class="col-12">
+							<div class="row no-gutters justify-content-between">
+								<button class="button--blue apartment__modal-btn">Квартира № <span data-apartment-number="">49</span></button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
