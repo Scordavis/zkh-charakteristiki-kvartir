@@ -13,7 +13,6 @@ body
 	font-size: 16px
 	min-width: 992px
 	position: relative
-	background-color: #eeeee0
 	line-height: 1.65
 	font-family: $default-font
 	overflow-x: hidden
@@ -179,13 +178,14 @@ button
 
 
 // Serega, otsuda nachinautsja stili dlja etoj stranicy
-// background dlja stranicy poka propisan v body
 // Zameni kusok koda s knopkami v osnovnom faile na tot, kotoriy zdes
 
 
 
 // .apartment
 .apartment
+	background-color: #eeeee0
+
 	&__wrapper
 	&__characteristics
 	&__table
@@ -275,12 +275,23 @@ button
 			margin-bottom: 4px
 
 	&__modal-btn
+		min-width: 170px
 		background-color: transparent
 		padding: 14px
 		color: $accent
 		font-size: 16px
 		font-weight: bold
 		border: 1px solid $accent
+		&--red
+			background-color: $danger
+			color: white
+			border: 1px solid white
+			cursor: pointer
+			@include transition(.2s)
+			&:hover
+				background-color: white
+				border-color: $danger
+				color: $danger
 
 
 
