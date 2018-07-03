@@ -4883,87 +4883,63 @@ button {
           -ms-transform: rotate(90deg);
               transform: rotate(90deg); }
 
-.nav-section {
-  height: 74px;
-  background-color: #cd1000; }
-  .nav-section__button {
-    height: 50px; }
+.apartment__table {
+  width: 100%; }
 
-.characteristics-cards {
-  background-color: #f2f2f2; }
-  .characteristics-cards__item {
-    display: block;
-    width: 100%;
-    background-color: white;
-    -webkit-box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.1); }
-  .characteristics-cards__number {
-    color: rgba(0, 81, 163, 0.2);
-    font-size: 72px;
-    font-weight: bold;
-    line-height: 1; }
-  .characteristics-cards__title {
-    color: #606060;
-    font-size: 17px;
-    font-weight: bold;
-    text-transform: uppercase; }
-  .characteristics-cards__link--grey {
-    display: block;
-    color: #bababa; }
-    .characteristics-cards__link--grey:hover {
-      color: #999999; }
-  .characteristics-cards__link--blue {
-    color: #0051a3;
-    font-weight: 700; }
-    .characteristics-cards__link--blue:hover {
-      color: #003870; }
+.apartment__row {
+  height: 48px;
+  background-color: white;
+  color: #606060;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #606060;
+  border-top: none; }
+  .apartment__row--gray {
+    background-color: #606060;
+    color: white; }
+    .apartment__row--gray td:first-child {
+      border-right: 1px solid white; }
 
-.houses {
-  border-bottom: 1px solid #f0f0f0; }
-  .houses:last-of-type {
-    border: none; }
-  .houses__counter {
-    position: relative;
-    display: inline-block;
-    color: #0051a3;
-    font-size: 20px;
-    font-weight: bold;
-    font-style: normal; }
-    .houses__counter:after {
-      position: relative;
-      content: '.'; }
-  .houses__title {
-    display: inline-block;
-    font-size: 18px;
-    font-weight: normal; }
-    .houses__title:before {
-      display: inline-block;
-      margin-right: 4px;
-      counter-increment: section;
-      content: counter(section) ".";
-      color: #0051a3;
-      font-size: 20px;
-      font-weight: bold; }
-  .houses__item {
-    margin-bottom: 14px; }
-  .houses__wrapper {
-    height: 98px;
-    padding: 10px 22px;
-    border: 2px solid #f2f2f2; }
-  .houses__card {
-    height: 100%;
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-        -ms-flex-align: end;
-            align-items: flex-end; }
-  .houses__img {
-    max-width: 38px;
-    height: auto; }
-  .houses__numbers {
-    margin-bottom: 0;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: .7; }
+.apartment__col {
+  width: auto;
+  text-align: center; }
+  .apartment__col:first-child {
+    width: 70%;
+    padding-left: 22px;
+    text-align: left;
+    border-right: 1px solid #606060; }
+
+.apartment__img-wrapper {
+  height: 300px;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+
+.apartment__img-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
+  .apartment__img-btn:hover {
+    background-color: rgba(0, 0, 0, 0.15); }
+
+.apartment__img-text {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  left: 0;
+  bottom: 50px;
+  color: #606060;
+  font-size: 14px;
+  z-index: 2; }
 
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
