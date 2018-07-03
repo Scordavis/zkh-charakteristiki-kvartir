@@ -4851,6 +4851,9 @@ button {
   min-height: 120px;
   height: 120px;
   color: white; }
+  .site-header--eights {
+    min-height: 90px;
+    height: 90px; }
   .site-header__title {
     font-size: 20px;
     text-transform: uppercase; }
