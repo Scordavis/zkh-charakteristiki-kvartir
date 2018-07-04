@@ -4868,20 +4868,6 @@ button {
     width: 100%;
     max-width: 80px;
     height: auto; }
-  .site-header__settings {
-    position: relative;
-    display: block;
-    width: auto;
-    -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-            transform: rotate(0deg);
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; }
-    .site-header__settings:hover {
-      -webkit-transform: rotate(90deg);
-          -ms-transform: rotate(90deg);
-              transform: rotate(90deg); }
 
 .apartment {
   background-color: #eeeee0; }
@@ -4962,13 +4948,22 @@ button {
       font-weight: normal;
       margin-bottom: 4px; }
   .apartment__modal-btn {
-    min-width: 170px;
+    display: block;
+    width: 100%;
     background-color: transparent;
     padding: 14px;
     color: #0051a3;
     font-size: 16px;
     font-weight: bold;
-    border: 1px solid #0051a3; }
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #0051a3;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    .apartment__modal-btn:hover {
+      background-color: white;
+      text-decoration: none; }
     .apartment__modal-btn--red {
       background-color: #cd1000;
       color: white;
@@ -4981,6 +4976,55 @@ button {
         background-color: white;
         border-color: #cd1000;
         color: #cd1000; }
+
+.apartment-modal {
+  max-height: 80vh;
+  overflow-y: auto; }
+  .apartment-modal__breadcrumbs {
+    color: #606060;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase; }
+    .apartment-modal__breadcrumbs--item {
+      position: relative;
+      text-transform: none;
+      margin-left: 10px; }
+      .apartment-modal__breadcrumbs--item:before {
+        position: relative;
+        display: inline-block;
+        content: '/';
+        margin-right: 10px;
+        font-weight: normal; }
+  .apartment-modal__heading {
+    font-weight: bold; }
+  .apartment-modal__data {
+    font-weight: normal; }
+    .apartment-modal__data--span {
+      margin-left: 4px;
+      font-weight: bold; }
+  .apartment-modal__table {
+    font-size: 13px; }
+    .apartment-modal__table--active {
+      color: #0051a3; }
+  .apartment-modal__row {
+    font-size: 13px;
+    font-weight: normal; }
+    .apartment-modal__row--gray td {
+      border-right: 1px solid white; }
+      .apartment-modal__row--gray td:last-child {
+        border-right: none; }
+  .apartment-modal__col {
+    min-width: 52px;
+    padding: 4px 8px;
+    font-weight: normal;
+    text-align: center;
+    word-break: break-word;
+    line-height: 1.2;
+    border-right: 1px solid #606060; }
+    .apartment-modal__col:first-child {
+      width: auto;
+      padding: 4px 8px;
+      text-align: center; }
 
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {

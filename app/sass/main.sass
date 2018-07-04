@@ -131,14 +131,17 @@ button
 	&__title
 		font-size: 20px
 		text-transform: uppercase
+
 	&__city
 		font-size: 14px
 		text-transform: uppercase
+
 	&__region
 		&:before
 			display: inline-block
 			content: ' / '
 			margin: 0 8px
+
 	&__logo-wrapper
 	&__logo
 		width: 100%
@@ -146,35 +149,6 @@ button
 		height: auto
 
 	&__button
-	&__settings
-		position: relative
-		display: block
-		width: auto
-		transform: rotate(0deg)
-		@include transition(.3s)
-		// z-index: 2
-		// &:before
-		// 	position: absolute
-		// 	top: -12px
-		// 	right: 0
-		// 	bottom: 0
-		// 	left: 19px
-		// 	content: ''
-		// 	display: block
-		// 	width: 60px
-		// 	height: 60px
-		// 	background-color: white
-		// 	opacity: .5
-		// 	border-radius: 100%
-		// 	transform: scale(0)
-		// 	z-index: -1
-		// 	@include transition(.1s)
-		&:hover
-			transform: rotate(90deg)
-		// 	&:before
-		// 		transform: scale(1.5)
-		// 		opacity: 0
-
 
 
 // Serega, otsuda nachinautsja stili dlja etoj stranicy
@@ -223,7 +197,6 @@ button
 			background-position: 50% 50%
 			background-repeat: no-repeat
 
-
 	&__file-input
 		position: absolute
 		width: 1px;
@@ -233,7 +206,6 @@ button
 		overflow: hidden;
 		clip: rect(0,0,0,0);
 		border: 0;
-
 
 	&__file-wrapper
 		position: absolute
@@ -275,13 +247,20 @@ button
 			margin-bottom: 4px
 
 	&__modal-btn
-		min-width: 170px
+		display: block
+		width: 100%
 		background-color: transparent
 		padding: 14px
 		color: $accent
 		font-size: 16px
 		font-weight: bold
+		text-align: center
+		text-decoration: none
 		border: 1px solid $accent
+		@include transition(.2s)
+		&:hover
+			background-color: white
+			text-decoration: none
 		&--red
 			background-color: $danger
 			color: white
@@ -292,6 +271,64 @@ button
 				background-color: white
 				border-color: $danger
 				color: $danger
+
+// modal apartment
+.apartment-modal
+	max-height: 80vh
+	overflow-y: auto
+	&__breadcrumbs
+		color: $text
+		font-size: 16px
+		font-weight: bold
+		text-transform: uppercase
+
+		&--item
+			position: relative
+			text-transform: none
+			margin-left: 10px
+			&:before
+				position: relative
+				display: inline-block
+				content: '/'
+				margin-right: 10px
+				font-weight: normal
+
+	&__heading
+		font-weight: bold
+
+	&__data
+		font-weight: normal
+		&--span
+			margin-left: 4px
+			font-weight: bold
+
+	&__table
+		font-size: 13px
+
+		&--active
+			color: $accent
+
+	&__row
+		font-size: 13px
+		font-weight: normal
+		&--gray
+			td
+				border-right: 1px solid white
+				&:last-child
+					border-right: none
+
+	&__col
+		min-width: 52px
+		padding: 4px 8px
+		font-weight: normal
+		text-align: center
+		word-break: break-word
+		line-height: 1.2
+		border-right: 1px solid $text
+		&:first-child
+			width: auto
+			padding: 4px 8px
+			text-align: center
 
 
 
