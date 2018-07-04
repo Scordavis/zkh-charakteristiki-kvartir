@@ -4995,6 +4995,8 @@ button {
         content: '/';
         margin-right: 10px;
         font-weight: normal; }
+    .apartment-modal__breadcrumbs--active {
+      color: #0051a3; }
   .apartment-modal__heading {
     font-weight: bold; }
   .apartment-modal__data {
